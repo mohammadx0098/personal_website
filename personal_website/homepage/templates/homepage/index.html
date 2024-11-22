@@ -8,19 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vCard - Personal Portfolio</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="{% static "homepage/assets/images/logo.ico" %}" type="image/x-icon">
+  <!-- favicon-->
+  <link rel="shortcut icon" href='{% static "homepage/assets/images/logo.ico" %}' type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="{% static "homepage/assets/css/style.css" %}">
+  <!-- custom css link-->
+  <link rel="stylesheet" href='{% static "homepage/assets/css/style.css" %}'>
 
-  <!--
-    - google font link
-  -->
+  <!-- google font link-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -28,15 +22,11 @@
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <!-- #MAIN -->
 
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
+    <!-- #SIDEBAR -->
 
     <aside class="sidebar" data-sidebar>
 
@@ -76,11 +66,11 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">mohammadx0098@gmail.com</a>
+              <a href="mailto:richard@example.com" class="contact-link">mohammadxabbasi@gmail.com</a>
             </div>
 
           </li>
-<!-- 
+          <!-- 
           <li class="contact-item">
 
             <div class="icon-box">
@@ -142,8 +132,11 @@
           </li> -->
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/mohammadh-abbasi/" class="social-link", target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32m-273.3 373.43h-64.18V205.88h64.18ZM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43c0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43m264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44c-17.74 0-28.24 12-32.91 23.69c-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44c42.13 0 74 27.77 74 87.64Z"/></svg>
+            <a href="https://www.linkedin.com/in/mohammadh-abbasi/" class="social-link" , target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                  d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32m-273.3 373.43h-64.18V205.88h64.18ZM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43c0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43m264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44c-17.74 0-28.24 12-32.91 23.69c-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44c42.13 0 74 27.77 74 87.64Z" />
+              </svg>
             </a>
           </li>
 
@@ -157,15 +150,11 @@
 
 
 
-    <!--
-      - #main-content
-    -->
+    <!-- #main-content -->
 
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
+      <!-- #NAVBAR -->
 
       <nav class="navbar">
 
@@ -187,9 +176,9 @@
             <button class="navbar-link" data-nav-link>Blog</button>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
+          </li> -->
 
         </ul>
 
@@ -199,9 +188,7 @@
 
 
 
-      <!--
-        - #ABOUT
-      -->
+      <!-- #ABOUT -->
 
       <article class="about  active" data-page="about">
 
@@ -226,9 +213,7 @@
         </section>
 
 
-        <!--
-          - service
-        -->
+        <!-- service -->
 
         <section class="service">
 
@@ -239,7 +224,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="{% static "homepage/assets/images/icon-dev.svg" %}" alt="Web development icon" width="40">
+                <img src='{% static "homepage/assets/images/icon-dev.svg" %}'' alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -254,14 +239,15 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="{% static "homepage/assets/images/icon-design.svg" %}" alt="design icon" width="40">
+                <img src=' {% static "homepage/assets/images/icon-design.svg" %}'' alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Bug Bounty</h4>
 
                 <p class="service-item-text">
-                  I participate in bug bounty programs, finding and reporting security vulnerabilities to improve system security and earn rewards.
+                  I participate in bug bounty programs, finding and reporting security vulnerabilities to improve system
+                  security and earn rewards.
                 </p>
               </div>
 
@@ -424,10 +410,11 @@
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="{% static "homepage/assets/images/avatar-1.png" %}" alt="Daniel lewis" width="80" data-modal-img>
+                <img src='{% static "homepage/assets/images/avatar-1.png" %}' alt="Daniel lewis" width="80"
+                  data-modal-img>
               </figure>
 
-              <img src="{% static "homepage/assets/images/icon-quote.svg" %}" alt="quote icon">
+              <img src='{% static "homepage/assets/images/icon-quote.svg" %}' alt="quote icon">
             </div>
 
             <div class="modal-content">
@@ -720,16 +707,16 @@
               <button class="active" data-filter-btn>All</button>
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
+            <!-- 
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li> -->
 
             <li class="filter-item">
               <button data-filter-btn>Web development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Security</button>
             </li>
 
           </ul>
@@ -752,16 +739,16 @@
                 <button data-select-item>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
 
-              <li class="select-item">
+              <!-- <li class="select-item">
                 <button data-select-item>Applications</button>
-              </li>
+              </li> -->
 
               <li class="select-item">
                 <button data-select-item>Web development</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Security</button>
               </li>
 
             </ul>
@@ -770,167 +757,27 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            {% for project in projects %}
+            <li class="project-item  active" data-filter-item data-category='{{project.get_category_display}}'>
+              <a href={{project.link}} target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="{% static "homepage/assets/images/project-1.jpg" %}" alt="finance" loading="lazy">
+                  <img src={{project.image.url}} alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">{{project.title}}</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">{{project.get_category_display|title}}</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            {% endfor %}
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{% static "homepage/assets/images/project-2.png" %}" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{% static "homepage/assets/images/project-3.jpg" %}" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{% static "homepage/assets/images/project-4.png" %}" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{% static "homepage/assets/images/project-5.png" %}" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{% static "homepage/assets/images/project-6.png" %}" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{% static "homepage/assets/images/project-7.png" %}" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{% static "homepage/assets/images/project-8.jpg" %}" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{% static "homepage/assets/images/project-9.png" %}" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
 
           </ul>
 
@@ -960,7 +807,8 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="{% static "homepage/assets/images/blog-1.jpg" %}" alt="Design conferences in 2022" loading="lazy">
+                  <img src='{% static "homepage/assets/images/blog-1.jpg" %}' alt="Design conferences in 2022"
+                    loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -988,7 +836,8 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="{% static "homepage/assets/images/blog-2.jpg" %}" alt="Best fonts every designer" loading="lazy">
+                  <img src='{% static "homepage/assets/images/blog-2.jpg" %}' alt="Best fonts every designer"
+                    loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1016,7 +865,7 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="{% static "homepage/assets/images/blog-3.jpg" %}" alt="Design digest #80" loading="lazy">
+                  <img src='{% static "homepage/assets/images/blog-3.jpg" %}' alt="Design digest #80" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1044,7 +893,8 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="{% static "homepage/assets/images/blog-4.jpg" \ %}" alt="UI interactions of the week" loading="lazy">
+                  <img src='{% static "homepage/assets/images/blog-4.jpg" %}' alt="UI interactions of the week"
+                    loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1072,7 +922,8 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="{% static "homepage/assets/images/blog-5.jpg" %}" alt="The forgotten art of spacing" loading="lazy">
+                  <img src='{% static "homepage/assets/images/blog-5.jpg" %}' alt="The forgotten art of spacing"
+                    loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1100,7 +951,7 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="{% static "homepage/assets/images/blog-6.jpg" %}" alt="Design digest #79" loading="lazy">
+                  <img src='{% static "homepage/assets/images/blog-6.jpg" %}' alt="Design digest #79" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1138,7 +989,7 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <!-- <article class="contact" data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
@@ -1175,7 +1026,7 @@
 
         </section>
 
-      </article>
+      </article> -->
 
     </div>
 
@@ -1189,7 +1040,7 @@
   <!--
     - custom js link
   -->
-  <script src="{% static "homepage/assets/js/script.js" %}"></script>
+  <script src='{% static "homepage/assets/js/script.js" %}'></script>
 
   <!--
     - ionicon link

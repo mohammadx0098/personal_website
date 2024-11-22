@@ -11,6 +11,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=["*"])
 
+CSRF_TRUSTED_ORIGINS = [
+    "http://*.127.0.0.1",
+    # "http://0.0.0.0",
+    "https://mohammadhabbasi.ir",
+]
+
 
 # Application definition
 LOCAL_APPS = [
@@ -18,7 +24,8 @@ LOCAL_APPS = [
     "personal_website.common.apps.CommonConfig",
     "personal_website.users.apps.UsersConfig",
     "personal_website.authentication.apps.AuthenticationConfig",
-    "personal_website.homepage",
+    "personal_website.homepage.apps.HomepageConfig",
+    "personal_website.projects.apps.ProjectsConfig",
 ]
 
 THIRD_PARTY_APPS = [
@@ -45,8 +52,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    "django.middleware.security.SecurityMiddleware",
     "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -137,9 +144,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-STATIC_URL = "/static/"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+MEDIA_URL = "media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",

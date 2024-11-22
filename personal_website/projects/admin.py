@@ -1,9 +1,11 @@
 from django.contrib import admin
-from .models import BaseUser
+from .models import Project
 
-@admin.register(BaseUser)
+@admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
     list_display = [
         "id",
-        "email",
+        "title",
+        "description",
+        "image",
     ]

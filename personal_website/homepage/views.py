@@ -1,9 +1,8 @@
 from django.shortcuts import render
 from django.views import View
-
-# Create your views here.
-
+from personal_website.projects.models import Project
 
 class Home(View):
     def get(self, request):
-        return render(request, "homepage/index.html")
+        projects = Project.objects.all().order_by('-category')
+        return render(request, "homepage/index.html", context={"projects":projects})
